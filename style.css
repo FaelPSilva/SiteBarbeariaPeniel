@@ -1,0 +1,376 @@
+@charset "UTH-8";
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+main{
+    min-width: 300px;
+    max-width: 1300px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgb(41, 39, 39);
+    box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.77);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; 
+}
+
+ h1 {
+    padding-left: 30px;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 0px 8px 10px rgba(0, 0, 0, 0.573); 
+}
+
+
+main > article > p {
+    color: white;    
+}
+
+section.imagem{
+    background-color: rgba(108, 108, 108, 0.226);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.822);
+    background-attachment: fixed;
+}
+
+section#img01{
+    background-image: url(images/barberPole.jpg);
+    background-position: center, center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+ 
+}
+
+section#img02{
+    background-image: url(images/bancada.jpg);
+    background-position:  center;
+    background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+h1.direita{
+    background-color: rgba(41, 39, 39, 0.563);
+    max-width: 540px;
+   
+} /*posicionamento to titulo ASSINATURAS*/
+
+section > h1 {
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(41, 39, 39, 0.596);
+    max-width: 540px;
+    padding-left: 30px;
+    padding-top: 100px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+section > p {
+    text-align: justify;
+    padding: 30px;
+    padding-top: opx;
+    margin-top: 0px;
+    max-width: 540px;
+    height: 400px;
+    background-color: rgba(39, 39, 39, 0.596);
+    
+}
+
+section p:hover{
+    font-size: 1.2rem;
+    background-color: rgba(39, 39, 39, 0.829);
+    transition: 0.5s;
+}
+
+
+
+.aBarbearia{
+    border:  1px solid white;
+    border-radius: 5px;
+    max-width: 600px;
+    text-align: justify;
+    padding: 10px;
+    text-indent: 30px;
+    font-size: 1.3em;
+    color: white;
+} /*configuração texto a barbearia*/
+
+.Assinaturas{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    padding-right: 10px;
+    color: white;
+    text-align: right;
+    text-shadow: 0px 8px 10px rgba(0, 0, 0, 0.573);
+   
+} /*configuração título ASSINATURA*/
+
+
+.assinatura {
+    padding: 10px;
+    color: white;
+    max-width: 700px;
+    margin-left: auto; /* Alinha à direita */
+    margin-right: 0; /* Remove a margem à direita */
+    text-align: justify;
+    font-size: 1.3em;
+    border:  1px solid white;
+    border-radius: 5px;;
+}/*configuração texto a ASSINATURA*/
+
+
+.links{
+    border-radius: 5px;
+    background-color: rgb(125, 26, 26);
+    margin: 0px;
+    padding: 5px 0px 5px 0px;
+}
+
+.linkAssinatura{
+    color: white;
+    text-shadow: 0px 5px 10px black;
+    text-align: center;
+    margin-bottom: 5px;
+} /*alinhamento links de assinatura*/
+
+.linkAssinatura a:hover{
+    color: red;
+}
+
+main h2{
+    max-width: 540px;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(127, 17, 17);
+    padding-left: 30px;
+    margin-bottom: 0px;
+    
+
+}
+
+.contato {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+main h3{
+    color: white;
+}
+
+main address{
+    color: white;
+}
+ 
+h3{
+    text-align: center;
+    padding: 20px;
+}
+
+h5{
+    color: white;
+}
+
+#addressContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+address{
+   background-color: rgba(128, 128, 128, 0.715);
+   border-radius: 8px;
+   text-shadow: 2px 2px 2px black;
+}
+
+aside{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    background-image: url(images/cidade_de_sao_paulo.png);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+
+footer {
+    background-color: #333; /* Cor de fundo do footer */
+    color: #6c6c6c; /* Cor do texto do footer */
+    padding: 5px; /* Espaçamento interno do footer */
+    text-align: center; /* Alinhamento do texto ao centro */
+    width: 100%; /* Largura total */
+    bottom: 0; /* Posiciona o footer no fundo da página */
+    margin: 0px;
+
+}
+
+footer > a {
+    color: #9b9999;
+    padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    section#img01{
+        background-size: cover;
+    }
+
+    section#img02{
+        background-size: cover;
+    }
+}
+
+:root {
+    --border-color: #cccccc;
+    --background-color: #f1f1f1;
+    --transition: all 0.2s ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: -0.04em;
+  }
+  
+  
+  .accordion {
+ 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin-bottom: 10px;
+  }
+  
+  .accordion .accordion-item {
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+  }
+  
+  .accordion .accordion-item .accordion-item-description-wrapper hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    visibility: visible;
+  }
+  
+  .accordion .accordion-item.open .accordion-item-description-wrapper hr {
+    visibility: visible;
+  }
+  
+  .accordion .accordion-item .accordion-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .accordion .accordion-item .accordion-item-header .accordion-item-header-title {
+    font-weight: 600;
+  }
+  
+  .accordion .accordion-item .accordion-item-header .accordion-item-header-icon {
+    transition: var(--transition);
+  }
+  
+  .accordion
+    .accordion-item.open
+    .accordion-item-header
+    .accordion-item-header-icon {
+    transform: rotate(-180deg);
+  }
+  
+  .accordion .accordion-item .accordion-item-description-wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  
+  .accordion .accordion-item.open .accordion-item-description-wrapper {
+    grid-template-rows: 1fr;
+  }
+  
+  .accordion
+    .accordion-item
+    .accordion-item-description-wrapper
+    .accordion-item-description {
+    min-height: 0;
+  }
+  
+  .accordion
+    .accordion-item
+    .accordion-item-description-wrapper
+    .accordion-item-description
+    p {
+    padding: 10px;
+    line-height: 1.5;
+ 
+  }
+  
+  .accordion-item .accordion-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #6c6c6c;
+    color: #f1f1f1;
+   
+}
+
+.accordion .accordion-item .accordion-item-header .accordion-item-header-title {
+    
+    font-size: 1rem;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+#questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#ask{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: none;
+}
+
